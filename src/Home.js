@@ -56,7 +56,9 @@ function Home() {
               &lt;&gt;
               <button type="button">Buy your Ticket</button>
               &lt;&gt;
-            </div>                                 
+            </div>   
+            <p> <strong>More information</strong></p>     
+            <a href="https://www.coldplay.com/"> Link for google</a>                         
         </div>
       </div>
       <hr/>
