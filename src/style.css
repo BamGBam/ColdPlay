@@ -1,5 +1,21 @@
-body{
+ @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;1,100&family=Roboto+Mono:wght@300&display=swap');
 
+* {
+    box-sizing: border-box;
+    font-family: Roboto+Mono;
+    color: black;
+}
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+
+}
+
+.main-header ul {
+    margin: 0;
 }
 
 .main-header{
@@ -7,8 +23,9 @@ body{
     background-blend-mode: multiply;
     background-image: url("https://cdn.apollo.audio/one/media/6478/8a63/c11f/5c05/c5e3/7ee3/coldplay-james-sit-down.jpg?quality=80&format=jpg&crop=0,0,675,1200&resize=crop");
     background-size: cover;
-
+    padding-bottom: 10px;
 }
+
 .try{
     /* height: 100px;
     width: 100px;
