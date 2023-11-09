@@ -1,10 +1,10 @@
-import './style.css'
+// import './style.css'
 
 
 function App() {
   return (
     <div className ="whole-page" >
-      <header>
+      <header className="main-header">
         <nav>
           <ul>
             <li>Home</li>
@@ -14,7 +14,11 @@ function App() {
         </nav>  
          <hr/>
       </header>
+      
       <div className="body">
+        <hr/>
+        &gt;&lt;
+
       <h1>The COLDPLAY</h1>
         <h2> About</h2>
         <p>
@@ -28,9 +32,9 @@ function App() {
       <div className="footer">
         <h2>Listen to me</h2>
         <ul>
-          <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ54R56WBMymhGb1IIc_f3zwbq-wFhQXNEjyT49Txvt&s"/></li>
-          <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/YouTube_icon_%282011-2013%29.svg/800px-YouTube_icon_%282011-2013%29.svg.png"/></li>
-          <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ54R56WBMymhGb1IIc_f3zwbq-wFhQXNEjyT49Txvt&s"/></li>
+          <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ54R56WBMymhGb1IIc_f3zwbq-wFhQXNEjyT49Txvt&s" width="50"/></li>
+          <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/YouTube_icon_%282011-2013%29.svg/800px-YouTube_icon_%282011-2013%29.svg.png" width="50"/></li>
+          <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ54R56WBMymhGb1IIc_f3zwbq-wFhQXNEjyT49Txvt&s" width="50"/></li>
         </ul>
       </div>
 

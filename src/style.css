@@ -1,3 +1,14 @@
+body{
+
+}
+
+.main-header{
+    background-color: rgba(0, 0, 0, .6);
+    background-blend-mode: multiply;
+    background-image: url("https://cdn.apollo.audio/one/media/6478/8a63/c11f/5c05/c5e3/7ee3/coldplay-james-sit-down.jpg?quality=80&format=jpg&crop=0,0,675,1200&resize=crop");
+    background-size: cover;
+
+}
 .try{
     /* height: 100px;
     width: 100px;
@@ -12,4 +23,4 @@
     margin: 50px;
     border: 10px solid black;
     background-color: green; */
-}
+} 
