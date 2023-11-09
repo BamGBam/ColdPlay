@@ -7,6 +7,9 @@
 }
 
 
+.nav {
+    display: inline;
+}
 
 body{
     margin: 0;
@@ -20,24 +23,78 @@ body{
 
 .main-header{
     background-color: rgba(0, 0, 0, .6);
+    cursor: pointer;
     background-blend-mode: multiply;
     background-image: url("https://cdn.apollo.audio/one/media/6478/8a63/c11f/5c05/c5e3/7ee3/coldplay-james-sit-down.jpg?quality=80&format=jpg&crop=0,0,675,1200&resize=crop");
     background-size: cover;
-    padding-bottom: 10px;
+    /* text-align: center; */
 }
 
-.try{
-    /* height: 100px;
-    width: 100px;
-    color: blue; */
+.band-name{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    /* font-size: 9em; */
+    /* color: aliceblue; */
+
 }
 
-.box{
-    /* height: 100px;
-    width: 100px;
-    padding: 20px;
+.band-name-large{
+    font-size: 4em;
+    /* color: blue; */
+}
+
+
+/* Adding hovering option when we are using cursor to choose options */
+.main-header :hover{
+    background-color: aqua;
+}
+
+/* This is how we make a column spread in one list */
+.main-header li{
+    display: inline-block;
+    padding-inline: 50px;
+    /* color: linear-gradient(to right,#00AAFF, #00FF6c); */
+    color: aqua;
+    text-decoration: none;
+    /* text-align: center; */
+}
+
+.about{
+    text-align: center;
+    color:aqua;
+}
+
+.about-image{
+    float: left;
+    margin: 10px;
+    border-radius: 10%;
+}
+.body-content{
+    /* text-align: center; */
+    margin: 1em;
+    padding: 0 1em;
+
+}
+
+.footer li{
+    display:inline;
+    /* display: flex; */
+    padding: 9px;
+    padding-left: 0px;
+    /* margin: auto; */
+    cursor: pointer;
+    flex-grow: 1;
+    /* text-align: end; */
+}
+
+.text-footer{
+    color: aqua;
+    text-align: center;
+
+}
+
+.footer ul{
+    flex-grow: 1;
+    /* text-align: end; */
     color: blue;
-    margin: 50px;
-    border: 10px solid black;
-    background-color: green; */
-} 
+}
