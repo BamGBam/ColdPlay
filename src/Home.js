@@ -58,7 +58,7 @@ function Home() {
               &lt;&gt;
             </div>   
             <p> <strong>More information</strong></p>     
-            <a href="https://www.coldplay.com/"> Link for google</a>                         
+            <a href="https://www.coldplay.com/"> Link for google</a>  
         </div>
       </div>
       <hr/>
@@ -69,6 +69,8 @@ function Home() {
           <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/YouTube_icon_%282011-2013%29.svg/800px-YouTube_icon_%282011-2013%29.svg.png"/></li>
           <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ54R56WBMymhGb1IIc_f3zwbq-wFhQXNEjyT49Txvt&s"/></li>
         </ul>
+        {/* <a target= "_self"> https://www.coldplay.com/ </a>                          */}
+
       </div>
 
     </div>
