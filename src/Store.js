@@ -1,88 +1,83 @@
 import './style.css'
 
-
+ 
 function Store() {
   return (
     <div className ="whole-page" >
-      <title>ColdPlay</title>
-      <header>
+      <header className="main-header">
         <nav>
-          <ul>
-            <li><a href='App.js'>Home</a></li>
-            <li><a href='index.html'>About</a></li>
-            <li><a href='Home.js'>Profile</a></li>
+          <ul className="header">
+            <li>Home</li>
+            <li>About</li>
+            <li>Profile</li>
           </ul>
         </nav>  
-         <hr/>
+        <h1 className="band-name band-name-large">The COLDPLAY</h1>
+        <button className= "btn btn-header">Listen to our Latest Album</button>
       </header>
-      <div className="body">
+      <section className="body-container">
+        <div>
           {/* Need a backgound image */}
-        <h1>The COLDPLAY</h1>
-        <section className='Album 1'>
-        <h1> Music</h1>
-        <div>
+          <h1> Music</h1>
           <div>
-            <strong>Viva Lavida</strong>
+            <div className='Album 1'>
+              <strong>Viva Lavida</strong>
+            </div>
+            <img src=" https://i.ytimg.com/vi/zOQ4ld6NsXE/maxresdefault.jpg" width="200"/>
+            <div>
+              <span>11.99$ </span>
+              <button className = "btn">Add to Cart</button>
+            </div>
           </div>
-          <img src=" https://i.ytimg.com/vi/zOQ4ld6NsXE/maxresdefault.jpg" width="200"/>
+            <br/>
+          <div className='Album 2'>
+            <div>
+              <strong>Music of Sphere</strong>
+            </div>
+            <img src="https://s3.amazonaws.com/media.thecrimson.com/photos/2021/10/18/202032_1352127.jpeg" width="200"/>
+            <div>
+              <span>11.99$ </span>
+              <button className = "btn">Add to Cart</button>
+            </div>
+          </div>
+            <h1> Cart</h1>
+            <div className='cart-details'>
+              <strong> ITEM</strong>
+              &lt;&gt;
+              <strong> PRICE</strong>
+              &lt;&gt;
+              <strong> QUANTITY</strong>
+              &lt;&gt;
+            </div>
+            <div className='cart1'>
+              <span> Album 1</span>
+              <img src="https://i.ytimg.com/vi/zOQ4ld6NsXE/maxresdefault.jpg" width="200"/>
+              &lt;&gt;
+              <span>12.99$</span>
+              <input type="number" value="1"/>
+              <button role="button"> Remove</button>
+
+            </div>
+
+            <div className='cart2'>
+              <span> Album 2</span>
+              <img src="https://i.ytimg.com/vi/zOQ4ld6NsXE/maxresdefault.jpg" width="200"/>
+              &lt;&gt;
+              <span>12.99$</span>
+              <input type="number" value="2"/>
+              <button role="button"> Remove</button>
+            </div>
+            <hr/>
+            <div> 
+              <strong> Total</strong>
+              <span>16.98$</span>
+            </div>
           <div>
-            <span>11.99$ </span>
-            <button>Add to Cart</button>
+            <button role="button">PURCHASE</button>
           </div>
         </div>
-        </section>
-        <section className='Album 2'>
-          <br/>
-        <div>
-          <div>
-            <strong>Music of Sphere</strong>
-          </div>
-          <img src="https://s3.amazonaws.com/media.thecrimson.com/photos/2021/10/18/202032_1352127.jpeg" width="200"/>
-          <div>
-            <span>11.99$ </span>
-            <button>Add to Cart</button>
-          </div>
-        </div>
-        </section>
-        <section className='Cart'>
-          <h1> Cart</h1>
-          <div className='cart-details'>
-            <strong> ITEM</strong>
-            &lt;&gt;
-            <strong> PRICE</strong>
-            &lt;&gt;
-            <strong> QUANTITY</strong>
-            &lt;&gt;
-          </div>
-          <div className='cart1'>
-            <span> Album 1</span>
-            <img src="https://i.ytimg.com/vi/zOQ4ld6NsXE/maxresdefault.jpg" width="200"/>
-            &lt;&gt;
-            <span>12.99$</span>
-            <input type="number" value="1"/>
-            <button role="button"> Remove</button>
-
-          </div>
-
-          <div className='cart2'>
-            <span> Album 2</span>
-            <img src="https://i.ytimg.com/vi/zOQ4ld6NsXE/maxresdefault.jpg" width="200"/>
-            &lt;&gt;
-            <span>12.99$</span>
-            <input type="number" value="2"/>
-            <button role="button"> Remove</button>
-          </div>
-          <hr/>
-          <div> 
-            <strong> Total</strong>
-            <span>16.98$</span>
-          </div>
-        </section>
-        <div>
-          <button role="button">PURCHASE</button>
-        </div>
-      </div>
-
+      </section>
+ 
       <hr/>
       <div className="footer">
         <h2>Listen to me</h2>

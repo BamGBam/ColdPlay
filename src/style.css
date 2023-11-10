@@ -45,8 +45,8 @@ body{
 
 
 /* Adding hovering option when we are using cursor to choose options */
-.main-header :hover{
-    background-color: aqua;
+.header :hover{
+    background-color: rgb(205, 232, 232);
 }
 
 /* This is how we make a column spread in one list */
@@ -97,4 +97,77 @@ body{
     flex-grow: 1;
     /* text-align: end; */
     color: blue;
+}
+
+
+
+
+.btn{
+    /* background-color: aqua; */
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em;
+    cursor: pointer;
+    /* border: 2px solid blue; */
+    /* border-radius: 0%; */
+
+}
+
+
+.btn-header{
+    margin: .5em 15% 2em 15%;
+    border: 2px solid aqua;
+    background-color: rgba(255, 255, 255, .3);
+    border-radius: 0%;
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.btn-header :hover{
+    background-color: rgb(205, 232, 232);
+}
+
+.btn-special{
+    display: black;
+    margin: 0%;
+    font-size: 4em;
+    background-color: rgba(255, 255, 255, .3);
+    border-radius: 50%;
+    padding: 0;
+    width: 100px;
+    height: 100px;
+
+}
+
+
+.body-container{
+    background-color: aqua;
+    /* display: inline; */
+    background-blend-mode: multiply;
+    /* background-image: url("https://cdn.apollo.audio/one/media/6478/8a63/c11f/5c05/c5e3/7ee3/coldplay-james-sit-down.jpg?quality=80&format=jpg&crop=0,0,675,1200&resize=crop"); */
+    background-size: cover;
+}
+
+.body-shoping{
+    border-bottom: 1px solid black ;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.body-shoping:last-child{
+    border-bottom: none;
+}
+
+.tour-item{
+    display: inline;
+    padding-right: .5em ;
+    width: 11%;
+}
+
+.button{
+    background-color: aqua;
+    border-radius: .3em;
+    font-weight: bold;
 }
