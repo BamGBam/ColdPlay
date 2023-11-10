@@ -26,8 +26,17 @@ body{
     cursor: pointer;
     background-blend-mode: multiply;
     background-image: url("https://cdn.apollo.audio/one/media/6478/8a63/c11f/5c05/c5e3/7ee3/coldplay-james-sit-down.jpg?quality=80&format=jpg&crop=0,0,675,1200&resize=crop");
-    background-size: cover;
+    background-size:cover;
+    margin: 0;
+    padding-bottom: 0%;
     /* text-align: center; */
+    border-bottom: 3px solid black;
+    
+
+}
+
+.whole-page{
+    margin: 0;
 }
 
 .band-name{
@@ -47,6 +56,7 @@ body{
 /* Adding hovering option when we are using cursor to choose options */
 .header :hover{
     background-color: rgb(205, 232, 232);
+    margin: 0;
 }
 
 /* This is how we make a column spread in one list */
@@ -56,8 +66,10 @@ body{
     /* color: linear-gradient(to right,#00AAFF, #00FF6c); */
     color: aqua;
     text-decoration: none;
+    margin: 0;
     /* text-align: center; */
 }
+
 
 .about{
     text-align: center;
@@ -170,4 +182,51 @@ body{
     background-color: aqua;
     border-radius: .3em;
     font-weight: bold;
+}
+
+.music-container{
+    display: flex;
+    margin: 3px;
+    flex-wrap: wrap;
+    padding-inline: 50px;
+    text-align: center ;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    border-bottom: 3px solid black;
+
+
+}
+
+.shopt-item{
+    padding-left: 20px;;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.shot-item-image{
+    height: 250px ;
+    width: auto;
+ 
+}
+
+.store-body{
+    border-bottom: 3px solid black;
+}
+
+.store-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+
+.cart-container{
+    display: flex;
+    margin: 3px;
+    flex-wrap: wrap;
+    padding-inline: 50px;
+    text-align: center ;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+
 }

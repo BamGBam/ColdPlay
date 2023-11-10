@@ -10,8 +10,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
      {/* <App /> */}
-    <Home/>  
-    {/* <Store></Store> */}
+    {/* <Home/>   */}
+    <Store></Store>
   </React.StrictMode>
 );
 

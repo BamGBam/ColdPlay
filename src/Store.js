@@ -3,82 +3,90 @@ import './style.css'
  
 function Store() {
   return (
+
     <div className ="whole-page" >
-      <header className="main-header">
-        <nav>
+      <div className="main-header">
+        <div>
           <ul className="header">
             <li>Home</li>
             <li>About</li>
             <li>Profile</li>
           </ul>
-        </nav>  
+        </div>  
         <h1 className="band-name band-name-large">The COLDPLAY</h1>
         <button className= "btn btn-header">Listen to our Latest Album</button>
-      </header>
-      <section className="body-container">
-        <div>
-          {/* Need a backgound image */}
+      </div>
+      {/* <section className="body-container"> */}
+        <div className='store-body'>
           <h1> Music</h1>
-          <div>
-            <div className='Album 1'>
-              <strong>Viva Lavida</strong>
-            </div>
-            <img src=" https://i.ytimg.com/vi/zOQ4ld6NsXE/maxresdefault.jpg" width="200"/>
-            <div>
-              <span>11.99$ </span>
-              <button className = "btn">Add to Cart</button>
+          <div className='music-container'>
+            <div className='shopt-item'>
+              <div>
+                <span>Viva Lavida</span>
+              </div>
+              <img className='shot-item-image' src=" https://i.ytimg.com/vi/zOQ4ld6NsXE/maxresdefault.jpg"/>
+              <div>
+                <span>11.99$ </span>
+                <button className = "btn">Add to Cart</button>
+              </div>
+            </div >
+            <div className='shopt-item'>
+              <div>
+                <span>Music of Sphere</span>
+              </div>
+              <img className='shot-item-image' src="https://s3.amazonaws.com/media.thecrimson.com/photos/2021/10/18/202032_1352127.jpeg"/>
+              <div>
+                <span>11.99$ </span>
+                <button className = "btn">Add to Cart</button>
+              </div>
             </div>
           </div>
-            <br/>
-          <div className='Album 2'>
-            <div>
-              <strong>Music of Sphere</strong>
-            </div>
-            <img src="https://s3.amazonaws.com/media.thecrimson.com/photos/2021/10/18/202032_1352127.jpeg" width="200"/>
-            <div>
-              <span>11.99$ </span>
-              <button className = "btn">Add to Cart</button>
-            </div>
-          </div>
+          {/* Cart container */}
             <h1> Cart</h1>
             <div className='cart-details'>
-              <strong> ITEM</strong>
-              &lt;&gt;
-              <strong> PRICE</strong>
-              &lt;&gt;
-              <strong> QUANTITY</strong>
-              &lt;&gt;
+                <span> ITEM</span>
+                <span> PRICE</span>
+                <span> QUANTITY</span>
             </div>
-            <div className='cart1'>
-              <span> Album 1</span>
-              <img src="https://i.ytimg.com/vi/zOQ4ld6NsXE/maxresdefault.jpg" width="200"/>
-              &lt;&gt;
-              <span>12.99$</span>
-              <input type="number" value="1"/>
-              <button role="button"> Remove</button>
+            <div className='cart-container'>
+              <div className='shopt-item'>
+                <div>
+                <span> Album 1</span>
+                </div>
+                <div>
+                <img  className='shot-item-image' src="https://i.ytimg.com/vi/zOQ4ld6NsXE/maxresdefault.jpg"/>
+                </div>
+                <span>12.99$</span>
+                <input type="number" value="1"/>
+                <button role="button"> Remove</button>
+              </div>
 
-            </div>
-
-            <div className='cart2'>
-              <span> Album 2</span>
-              <img src="https://i.ytimg.com/vi/zOQ4ld6NsXE/maxresdefault.jpg" width="200"/>
-              &lt;&gt;
-              <span>12.99$</span>
-              <input type="number" value="2"/>
-              <button role="button"> Remove</button>
-            </div>
-            <hr/>
-            <div> 
+              <div className='shopt-item'>
+                <div>
+                <span> Album 1</span>
+                </div>
+                <div>
+                <img  className='shot-item-image' src="https://i.ytimg.com/vi/zOQ4ld6NsXE/maxresdefault.jpg"/>
+                </div>
+                <span>12.99$</span>
+                <input type="number" value="1"/>
+                <button role="button"> Remove</button>
+              </div>
+          </div>
+          
+          <div>
+          <div className='shopt-item'> 
               <strong> Total</strong>
               <span>16.98$</span>
-            </div>
-          <div>
+          </div>
+          <div className='shopt-item'>
             <button role="button">PURCHASE</button>
           </div>
+          </div>
+        
         </div>
-      </section>
- 
-      <hr/>
+      
+      {/* </Foooooooter from here> */}
       <div className="footer">
         <h2>Listen to me</h2>
         <ul>
@@ -95,8 +103,6 @@ function Store() {
         {/* <a target= "_self"> https://www.coldplay.com/ </a>                          */}
       </div>
     </div>
-
-
   );
 }
 
