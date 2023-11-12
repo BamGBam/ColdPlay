@@ -1,19 +1,36 @@
+import React from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import './style.css'
+import Home from './Home';
+import App from './App';
+import './mainStore'
 
- 
+// let d = new Date();
+// document.body.innerHTML = "<h1>Today's date is " + d + "</h1>"
+
 function Store() {
   return (
-
+    <Router>
     <div className ="whole-page" >
       <div className="main-header">
         <div>
           <ul className="header">
             <li>Home</li>
+            {/* <li><Link to="/Home">About</Link></li>             */}
+            {/* <li><Link to="/Home.js">About</Link></li> */}
+
             <li>About</li>
             <li>Profile</li>
           </ul>
         </div>  
         <h1 className="band-name band-name-large">The COLDPLAY</h1>
+        {/* <script>
+      let d = new Date();
+      document.body.innerHTML = "<h1>Today's date is " + d + "</h1>"
+      document.body.innerHTML
+  </script> */}
+
+
         <button className= "btn btn-header">Listen to our Latest Album</button>
       </div>
       {/* <section className="body-container"> */}
@@ -57,7 +74,7 @@ function Store() {
                 <img  className='shot-item-image' src="https://i.ytimg.com/vi/zOQ4ld6NsXE/maxresdefault.jpg"/>
                 </div>
                 <span>12.99$</span>
-                <input type="number" value="1"/>
+                <input type="number" />
                 <button role="button"> Remove</button>
               </div>
 
@@ -69,7 +86,7 @@ function Store() {
                 <img  className='shot-item-image' src="https://i.ytimg.com/vi/zOQ4ld6NsXE/maxresdefault.jpg"/>
                 </div>
                 <span>12.99$</span>
-                <input type="number" value="1"/>
+                <input type="number" />
                 <button role="button"> Remove</button>
               </div>
           </div>
@@ -83,9 +100,9 @@ function Store() {
             <button role="button">PURCHASE</button>
           </div>
           </div>
-        
         </div>
-      
+
+        
       {/* </Foooooooter from here> */}
       <div className="footer">
         <h2>Listen to me</h2>
@@ -94,15 +111,18 @@ function Store() {
             <a href='https://www.youtube.com/channel/UCDPM_n1atn2ijUwHd0NNRQw' target="_blank">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/YouTube_icon_%282011-2013%29.svg/800px-YouTube_icon_%282011-2013%29.svg.png" width="50"/>            </a>
           </li>
-          <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/YouTube_icon_%282011-2013%29.svg/800px-YouTube_icon_%282011-2013%29.svg.png" width="50"/></li>
           <li>
-            <a href='https://www.youtube.com/channel/UCDPM_n1atn2ijUwHd0NNRQw'>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/YouTube_icon_%282011-2013%29.svg/800px-YouTube_icon_%282011-2013%29.svg.png" width="50"/></li>
+          <li>
+            <a href='https://www.youtube.com/channel/UCDPM_n1atn2ijUwHd0NNRQw' target="_blank">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ54R56WBMymhGb1IIc_f3zwbq-wFhQXNEjyT49Txvt&s" width="50"/>
             </a>
-          </li>        </ul>
+          </li>        
+        </ul>
         {/* <a target= "_self"> https://www.coldplay.com/ </a>                          */}
       </div>
     </div>
+    </Router>
   );
 }
 

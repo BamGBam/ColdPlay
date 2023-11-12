@@ -88,6 +88,8 @@ body{
 
 }
 
+
+
 .footer li{
     display:inline;
     /* display: flex; */
@@ -96,10 +98,13 @@ body{
     /* margin: auto; */
     cursor: pointer;
     flex-grow: 1;
+    
     /* text-align: end; */
 }
 
 .text-footer{
+    padding-inline: 30px;
+
     color: aqua;
     text-align: center;
 
@@ -163,9 +168,12 @@ body{
 }
 
 .body-shoping{
+    /* display: flex; */
     border-bottom: 1px solid black ;
     padding-bottom: 1em;
     margin-bottom: 1em;
+    padding-inline: 30px;
+
 }
 
 .body-shoping:last-child{
@@ -173,15 +181,26 @@ body{
 }
 
 .tour-item{
-    display: inline;
+    /* display: inline; */
     padding-right: .5em ;
     width: 11%;
+    text-align: center;
+    /* padding-inline: 30px; */
+
 }
 
 .button{
+    margin: auto;
+    display: grid;
     background-color: aqua;
+    cursor: pointer;
     border-radius: .3em;
+    
+    /* margin: 10px; */
+    /* place-items: center; */
     font-weight: bold;
+    /* vertical-align: middle; */
+
 }
 
 .music-container{

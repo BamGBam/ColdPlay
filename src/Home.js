@@ -1,4 +1,5 @@
 import './style.css'
+import './mainStore'
 
  
 function Home() {
@@ -18,10 +19,9 @@ function Home() {
           <button className="btn-special" >&#9658;</button>
           </a>
         </nav>  
-         <hr/>
       </header>
       <section>
-        <div>
+        <div className='home-body'>
           {/* Need a backgound image */}
           <div>
               <div className="body-shoping">
@@ -44,7 +44,7 @@ function Home() {
                 <span className="tour-item" >Massachuset</span>
                 <button className="button">Buy your Ticket</button>
               </div>   
-              <p> <strong>More information</strong></p>     
+              <p > More information</p>     
               <a href="https://www.coldplay.com/" target="_blank"> Link for google</a>  
           </div>
         </div>

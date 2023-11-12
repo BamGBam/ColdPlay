@@ -1,4 +1,5 @@
 // import './style.css'
+import './mainStore'
 
 
 function App() {
@@ -42,5 +43,5 @@ function App() {
 
   );
 }
-
+ 
 export default App;
