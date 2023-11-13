@@ -73,8 +73,8 @@ function Store() {
                 <div>
                 <img  className='shot-item-image' src="https://i.ytimg.com/vi/zOQ4ld6NsXE/maxresdefault.jpg"/>
                 </div>
-                <span>12.99$</span>
-                <input type="number" />
+                  <span className='getPrice'>12.99$</span>
+                <input className='quantity-input' type="number" value="2"/>
                 <button role="button"> Remove</button>
               </div>
 
@@ -86,7 +86,7 @@ function Store() {
                 <img  className='shot-item-image' src="https://i.ytimg.com/vi/zOQ4ld6NsXE/maxresdefault.jpg"/>
                 </div>
                 <span>12.99$</span>
-                <input type="number" />
+                <input className='quantity-input' type="number" value="2"/>
                 <button role="button"> Remove</button>
               </div>
           </div>
@@ -94,7 +94,7 @@ function Store() {
           <div>
           <div className='shopt-item'> 
               <strong> Total</strong>
-              <span>16.98$</span>
+              <span className='whole-price'>16.98$</span>
           </div>
           <div className='shopt-item'>
             <button role="button">PURCHASE</button>
